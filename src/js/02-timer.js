@@ -1,5 +1,6 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+import Notiflix from 'notiflix';
 
 const elements = {
   input: document.querySelector('#datetime-picker'),
@@ -28,6 +29,7 @@ function onBtnClick() {
       elements.seconds.textContent = addLeadingZero(seconds);
     } else {
       clearInterval(timerId);
+      Notiflix.Notify.success('Time is over!');
     }
   }, 1000);
 }
@@ -39,7 +41,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0].getTime() < options.defaultDate.getTime()) {
-      window.alert('Please choose a date in the future');
+      Notiflix.Notify.warning('Please choose a date in the future');
       elements.btnStart.disabled = true;
     }
     elements.btnStart.disabled = false;
