@@ -16,3 +16,48 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.input-timer {
+  align-items: center;
+  height: 30px;
+}
+.value {
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+  margin-right: 10px;
+}
+.label {
+  font-family: 'Kanit', sans-serif;
+  font-size: 50px;
+}
+.btn-timer {
+  color:white;
+  background-color:rgb(61, 123, 148);
+  font-family: 'Kanit', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  min-width: 40px;
+  text-align: center;
+  height: 30px;
+  border: none;
+  margin: 0 auto;
+}
+.btn-timer:hover,
+.btn-timer:focus {
+  color:white;
+  background-color:rgb(21, 127, 197);
+}
+.btn-timer:disabled {
+  color: rgb(93, 92, 92);
+  background-color: rgba(196, 196, 196, 0.615);
+  
+}
