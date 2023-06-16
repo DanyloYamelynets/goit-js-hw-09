@@ -15,6 +15,7 @@ elements.btnStart.addEventListener('click', onBtnClick);
 elements.btnStart.disabled = true;
 
 let futureDate;
+let timeLeft;
 
 function onBtnClick() {
   elements.btnStart.disabled = true;

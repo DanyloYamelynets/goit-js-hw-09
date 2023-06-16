@@ -4,6 +4,7 @@ const stopBtn = document.querySelector('button[data-stop]');
 
 startBtn.addEventListener('click', onStartClick);
 stopBtn.addEventListener('click', onStopClick);
+let colorsId;
 
 function onStartClick() {
   startBtn.disabled = true;
